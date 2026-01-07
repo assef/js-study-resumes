@@ -1,13 +1,11 @@
-# js-study-resumes
+# Resumos dos estudos de JavaScript
 
-In this repo, I'll resume my (from scratch) JS study sections.
+Esse repositório contém resumos dos estudos de JavaScript e não são nenhum tipo de guia.
 
-Those files are not a guide, but a resume of the study.
+A fonte de estudo é o livro ["You Don't Know JS" by Kyle Simpson](https://github.com/getify/You-Dont-Know-JS/tree/2nd-ed).
 
-I'm basing my study on the book ["You Don't Know JS" by Kyle Simpson](https://github.com/getify/You-Dont-Know-JS/tree/2nd-ed).
+Os textos não são gerados por IA, são meus resumos pessoais do que estudei a cada dia.
 
-Those texts are no AI generated.
+## Índice
 
-## Indice
-
-- [Day 1](Day-1/whats-is-js.md)
+- [Dia 1](Day-1/whats-is-js.md)
