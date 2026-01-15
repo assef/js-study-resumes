@@ -10,6 +10,7 @@ Os textos não são gerados por IA, são meus resumos pessoais do que estudei a 
 
 - [Dia 1](Day-1/whats-is-js.md)
 - [Dia 2](Day-2/what-is-js.md)
-- [Dia 3](Day-3/data-types.md)
-- [Dia 3](Day-3/var-types.md)
-- [Dia 3](Day-3/equality-and-coertion.md)
+- [Dia 3](Day-3/)
+  - [Tipos de dados](Day-3/data-types.md)
+  - [Tipos de variáveis](Day-3/var-types.md)
+  - [Igualdade e coerção](Day-3/equality-and-coertion.md)
