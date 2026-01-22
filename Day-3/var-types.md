@@ -14,7 +14,7 @@ Define uma variável que não pode ser reatribuida, ou seja, não é possível d
 
 ```javascript
 const objeto = {};
-Objeto = { a: 1 };
+objeto = { a: 1 };
 ```
 
 Mas é possível fazer:

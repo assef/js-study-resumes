@@ -26,7 +26,7 @@ Comparadores de grandeza não possuem comparação estrita, ou seja <, >, <=, ou
 A coerção de comparação (quando envolve um operador de igualdade) sempre tentar converter para números, portando “1” = 1, “1” é convertido para 1 e retorna true.
 Null e undefined são considerados iguais, porém null ou undefined se comparados com qualquer outro valor é false, isso é estranho pois pela lógica null == 0 seria true, pois Number(null) é 0, mas na árvore de decisão do JS, essas duas regras vem antes da regra de conversão para number, então o código retorna nesse ponto.
 
-Na comparação de objetos com outro tipo, o JS tenta converter o objeto primeiro com valueOf (object.valueOf()) e depois com toString (objectToString), por exemplo:
+Na comparação de objetos com outro tipo, o JS tenta converter o objeto primeiro com valueOf (object.valueOf()) e depois com toString (object.toString), por exemplo:
 
 ```javascript
 [10] == 10 //true
@@ -48,22 +48,21 @@ A coerção também funciona para condições (if, else, while, etc), mas de for
 
 ### Falsy:
 
+- null
 - undefined
 - false
-- null
 - NaN
-- “”
 - 0
+- -0
+- 0n
+- ""
+- document.all
 
 ### Truthy:
 
 - Tudo que não é falsy.
-- “0” //Pois é uma string com valor
-- “false” //Pois é uma string com valor
-- []
-- {}
 
-E importante notar também que essa coerção só é valida para condições, quando entra igualdade a coerção de operadores volta ao jogo como no exemplo abaixo:
+É importante notar que isso só é válido para estruturas condicionais:
 
 ```javascript
 const arrayvazio = [];
@@ -76,6 +75,8 @@ if (arrayvazio) {
 Mas:
 
 ```javascript
+const arrayvazio = [];
+
 if (arrayvazio == true) {
   //não entra
 }
